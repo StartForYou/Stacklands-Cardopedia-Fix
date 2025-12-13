@@ -3,14 +3,13 @@
   "id": "cardopedia_fix_hammer",
   "nameTerm": "cardopedia_fix_hammer_name",
   "descriptionTerm": "cardopedia_fix_hammer_description",
-  "icon": "apple",
-  "type": "Mobs",
-  "value": -1,
-  "_HealthPoints": 5,
+  "icon": "hammer",
+  "value": 363,
+  "_HasUniquePalette": true,
   "_MyPalette": {
     "Color": "#DB94FF",
     "Color2": "#AD66D1",
     "Icon": "#000000"
   },
-  "script": "Mob"
+  "_IsShiny": true
 }

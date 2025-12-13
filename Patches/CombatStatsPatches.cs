@@ -17,7 +17,7 @@ namespace CardopediaFix.Patches
         //        __instance.descriptionOverride = SokLoc.Translate(__instance.DescriptionTerm);
         //        __instance.descriptionOverride = __instance.descriptionOverride + "\n\n<i>" + "Nothing.";//this.GetConnectorInfoString(this.MyGameCard) + "</i>";
         //    }
-        //    return false; // false: 拦截，true: 继续执行原方法
+        //    return false;
         //}
 
         [HarmonyPatch(typeof(CombatStats), "InitStats")]
@@ -54,7 +54,7 @@ namespace CardopediaFix.Patches
             //    __instance.descriptionOverride = SokLoc.Translate(__instance.DescriptionTerm);
             //    __instance.descriptionOverride = __instance.descriptionOverride + "\n\n<i>" + "Nothing.";//this.GetConnectorInfoString(this.MyGameCard) + "</i>";
             //}
-            return false; // false: 拦截，true: 继续执行原方法
+            return false;
         }
     }
 }
