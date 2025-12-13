@@ -21,6 +21,7 @@ namespace CardopediaFix
             //SokLoc.instance.LoadTermsFromFile(System.IO.Path.Combine(this.Path, "localization_ideagroup.tsv"), false);
             //SokLoc.instance.CurrentLanguage
             this.Harmony.PatchAll(typeof(CombatStatsPatches));
+            //CardType.Resources
             //CardData
             //Cards.hammer
         }

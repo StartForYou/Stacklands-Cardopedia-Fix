@@ -4,11 +4,12 @@
   "nameTerm": "cardopedia_fix_hammer_name",
   "descriptionTerm": "cardopedia_fix_hammer_description",
   "icon": "hammer",
-  "value": 363,
+  "value": -1,
+  "type": "Resources",
   "_HasUniquePalette": true,
   "_MyPalette": {
-    "Color": "#DB94FF",
-    "Color2": "#AD66D1",
+    "Color": "#e3bff6",
+    "Color2": "#b97dd8",
     "Icon": "#000000"
   },
   "_IsShiny": true
