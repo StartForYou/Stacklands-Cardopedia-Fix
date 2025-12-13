@@ -3,3 +3,4 @@ obj/
 CardopediaFix.csproj
 CardopediaFix.csproj.user
 /.vs
+*.sln
