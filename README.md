@@ -8,7 +8,7 @@ I have noticed that occasionally, adding new creature type cards to the game can
 
 ### About Preview Image
 Preview image p1 depicts the issue that occurred when I used a certain mod from the Steam Workshop
-preview image p2 shows that the cardopedia returned to normal after using this mod
+Preview image p2 shows that the cardopedia returned to normal after using this mod
 
 ### When do I need it
 When you notice that your card list is disordered, it may be caused by the aforementioned situation (improper or missing card attributes). In that case, you may need this mod
