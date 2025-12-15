@@ -26,7 +26,11 @@ namespace CardopediaFix.Patches
         {
             if (null == stats)
             {
-                CardopediaFix.Instance.logger.Log("InitStats failed: stats error!");
+                if (!CardopediaFix.Instance.hasLogCardBug)
+                {
+                    CardopediaFix.Instance.hasLogCardBug = true;
+                    CardopediaFix.Instance.logger.Log("InitStats failed: There are problematic cards exist!");
+                }
                 __instance.HitChance = 0.5f; //by default
                 __instance.AttackSpeed = 3.5f; //by default
                 //__instance.MaxHealth = 1; // null
