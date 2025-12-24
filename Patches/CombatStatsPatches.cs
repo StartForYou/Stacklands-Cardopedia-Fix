@@ -50,14 +50,6 @@ namespace CardopediaFix.Patches
                 //SpecialHit specialHit = new() { Chance = 0, HitType = SpecialHitType.None, Target = SpecialHitTarget.Target };
                 __instance.SpecialHits = [];
             }
-            //GameCard myGameCard = __instance.MyGameCard;
-            //__instance.descriptionOverride = SokLoc.Translate(__instance.DescriptionTerm);
-            //__instance.descriptionOverride = __instance.descriptionOverride + "\n\n<i>" + "Nothing.";
-            //if (myGameCard != null && myGameCard.CardConnectorChildren.Count > 0 && __instance.MyGameCard.IsHovered)
-            //{
-            //    __instance.descriptionOverride = SokLoc.Translate(__instance.DescriptionTerm);
-            //    __instance.descriptionOverride = __instance.descriptionOverride + "\n\n<i>" + "Nothing.";//this.GetConnectorInfoString(this.MyGameCard) + "</i>";
-            //}
             return false;
         }
     }
