@@ -9,7 +9,7 @@ namespace CardopediaFix.Patches
     {
         [HarmonyPatch(typeof(CardopediaEntryElement), "UpdateText")]
         [HarmonyPrefix]
-        public static bool OnInitStats(CardopediaEntryElement __instance)
+        public static bool OnUpdateText(CardopediaEntryElement __instance)
         {
             if (__instance.MyCardData != null)
             {
@@ -21,13 +21,13 @@ namespace CardopediaFix.Patches
                 {
                     CardopediaFix.Instance.logger.LogWarning(ex.ToString());
                 }
-
+                if (__instance.wasFound)
+                {
+                    __instance.Button.TextMeshPro.text = "• " + __instance.MyCardData.Name;
+                    return false;
+                }
             }
-            if (__instance.wasFound)
-            {
-                __instance.Button.TextMeshPro.text = "• " + __instance.MyCardData.Name;
-                return false;
-            }
+            
             __instance.Button.TextMeshPro.text = "• ???";
             return false;
         }
