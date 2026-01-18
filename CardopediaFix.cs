@@ -7,7 +7,7 @@ namespace CardopediaFix
     {
 
         public static CardopediaFix Instance;
-        public int mIdeaGroup;
+        //public int mIdeaGroup;
         public ModLogger logger;
         public bool hasLogCardBug;
 
@@ -23,6 +23,7 @@ namespace CardopediaFix
             //SokLoc.instance.LoadTermsFromFile(System.IO.Path.Combine(this.Path, "localization_ideagroup.tsv"), false);
             //SokLoc.instance.CurrentLanguage
             this.Harmony.PatchAll(typeof(CombatStatsPatches));
+            this.Harmony.PatchAll(typeof(CardopediaEntryElementPatches));
             //CardType.Resources
             //CardData
             //Cards.hammer
@@ -47,7 +48,7 @@ namespace CardopediaFix
                     {
                         for (int i = cardCount - 1; i >= 0; i--)
                         {
-                            j++;
+                            //j++;
                             if (GameDataLoader.instance.CardDataPrefabs[i].Id == hammerId)
                             {
                                 hammer = GameDataLoader.instance.CardDataPrefabs[i];
@@ -62,14 +63,13 @@ namespace CardopediaFix
                     }
                     else 
                     {
-                        Logger.Log("My cardData load failed.");
+                        //Logger.Log("My cardData load failed.");
                     }
                 }
             }
             catch (Exception ex)
             {
                 logger.LogWarning(ex.ToString());
-                throw;
             }
             //Logger.Log("Ready End!");
         }
